@@ -1,10 +1,10 @@
 function Article({ post }) {
   return (
-    <div>
+    <article>
       <h3>{post.title}</h3>
-      <small>{post.date}</small>
+      <small>{post.date || "No date available"}</small>
       <p>{post.preview}</p>
-    </div>
+    </article>
   );
 }
 

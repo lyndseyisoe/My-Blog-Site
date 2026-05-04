@@ -1,9 +1,9 @@
-function About({ about, image }) {
+function About({ about, image = "https://via.placeholder.com/150" }) {
   return (
-    <div>
-      <img src={image} alt="blog" style={{ width: "150px" }} />
+    <aside>
+      <img src={image} alt="blog logo" style={{ width: "150px" }} />
       <p>{about}</p>
-    </div>
+    </aside>
   );
 }
 
